@@ -1,0 +1,17 @@
+{
+  "name": "Copilot Cartoonizer",
+  "description": "Adiciona suporte para gerar prompts animados e cenas no estilo cartoon usando IA.",
+  "version": "1.0.0",
+  "entry": "index.js",
+  "capabilities": {
+    "commands": [
+      {
+        "name": "cartoonize",
+        "description": "Gera um prompt de imagem animada a partir de texto descritivo."
+      }
+    ]
+  },
+  "permissions": {
+    "network": ["https://api.openai.com", "https://*.azure.com"]
+  }
+}https://api.openai.comCopilot Cartoonizer
