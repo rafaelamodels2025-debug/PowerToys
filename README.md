@@ -7,7 +7,31 @@
 <h1 align="center">
   <span>Microsoft PowerToys</span>
 </h1>
+import random  # precisa importar primeiro
 
+# Base de dados de posts do usuário (cores, estilos, tipos)
+user_creations = [
+    {"type": "logo", "color": "gold", "style": "minimal"},
+    {"type": "post", "color": "pink", "style": "vibrant"},
+    {"type": "banner", "color": "blue", "style": "clean"},
+]
+
+# Função simples de aprendizado (sugestão de melhorias)
+def angel_suggestion(user_creations):
+    preferred_colors = [c["color"] for c in user_creations]
+    preferred_styles = [c["style"] for c in user_creations]
+
+    # Sugestão aleatória baseada no histórico
+    suggestion = {
+        "type": random.choice(["post", "logo", "banner"]),
+        "color": random.choice(preferred_colors),
+        "style": random.choice(preferred_styles),
+        "hashtag": "#DesignByAngel",
+        "caption": "Criação top inspirada no seu estilo!"
+    }
+    return suggestion
+
+# Demonstração
 <h3 align="center">
   <a href="#-installation">Installation</a>
   <span> . </span>
